@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-    * {
-     font-family: "Times New Roman", Times, serif;
-style="background-color:FFFFFFFF;"
-    }
-</style>
 
 <body>
 
@@ -13,16 +7,19 @@ style="background-color:FFFFFFFF;"
 
 <p>NOTICE: </p>
 
-<p>These web page is served as educationel  resource,demonstrating technology power and the potentional
-useing computer graphic in the WEB BROWSER power using WEBGL ,CSS3,HTML5  Enable to the createrion
-of interactive and Visualy  rich expirience direct in the WEB browser. Offer to valueable in sight into
-the visual rich expirence rendering technique that can  be applyed to 3D model,animation, dynamic visual effect
-without  relyon external software or plugin. By exploring  educational explanes, learners, can gain a completely
-understanding of  behind web graphics ,how they are usaged, rendered in real time, and how technologies  transforming
-the way we intteractive with  digital  software on web.</p>
+<p>This website serves as an educational resource, demonstrating the power of technology and the potential
+ of computer graphics in web browsers. Using WebGL, CSS3, and HTML5, it enables the creation of interactive
+ and visually rich experiences directly within the web browser. The site offers valuable insights into rendering
+ techniques for visually rich experiences, applicable to 3D models, animations, and dynamic visual effects,
+ without relying on external software or plugins.
 
-<p>THIS website provider links  for 2D PROGRAM 3D across the internet.  This will  be a  reosurce site which you
-can  revist many time to  find a  resoruce needed.</p>
+Through the exploration of these educational examples, learners can gain a comprehensive understanding
+ of web graphics: how they are created, rendered in real time, and how these technologies are transforming the
+ way we interact with digital content on the web.</p>
+
+<p>This website provides links to various 2D and 3D graphics programs across the internet. It functions
+ as a resource hub that you can revisit repeatedly to find the tools and resources you need for your educational
+ or professional projects.</p>
 
 <hr>
 
@@ -32,16 +29,26 @@ can  revist many time to  find a  resoruce needed.</p>
   <li><a href="https://www.desmos.com/calculator">Desmos Graphing calculator</a></li>
   <li><a href="https://www.desmos.com/scientific">Desmos Scientific calculator</a></li>
   <li><a href="https://www.geogebra.org/calculator">Geogebra - Algebra visualiser</a></li>
+  <li><a href="https://ptable.com/?lang=ru#Properties">2D periodic Table</a></li>
 </ul>
 
 <h1>3D PROGRAMME</h1>
+
+<ul>
+  <li><a href="https://www.new3jcn.com/Simulation/periodic.html">Interactive 3D periodic table</a></li>
+  <li><a href="https://www.new3jcn.com/Simulation/soccer.html">Projectile motion of a Soccer Ball simulation</a></li>
+  <li><a href="https://www.new3jcn.com/Simulation/Cannon.html">3D Projectile Problem</a></li>
+  <li><a href="https://www.new3jcn.com/Simulation/newton_g_force.html">Newton Physics law expiriment 1</a></li>
+  <li><a href="https://www.new3jcn.com/Phyc140/newton_2_law.html">Newton Physics law expiriment 2</a></li>
+  <li><a href="https://www.new3jcn.com/Phyc140/heat-transfer.html">Newton Physics law expiriment 3</a></li>
+</ul>
 
 
 <p>COMING SOON</p>
 
 <hr>
 
-<center><p>Website  by   Daan  Jansen 2025<p><center>
+<center><p style="margin-bottom: 0; padding-bottom: 0;margin-top: 25px;">Website  by   Daan  Jansen 2025</p>
 
 
 
@@ -140,7 +147,9 @@ can  revist many time to  find a  resoruce needed.</p>
 const urls = [
 "https://gotlgsogl-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/docs-classroom-s/attach/770f570099aa/go.xml?part=0.1&view=1&authuser=6&container=ig",
 "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&container=ig",
-"https://martinmullins.github.io/ssam/"
+"https://martinmullins.github.io/ssam/",
+"https://binbashbanana.github.io/webretro/",
+"https://bimmy4664.neocities.org/eaglercraft/1.8.8"
   ];
 
         function create(urlIndex) {
@@ -156,11 +165,44 @@ const urls = [
             iframe.src = url;
             win.document.body.appendChild(iframe);
         }
+
+       function create_broken() {
+            var url = document.getElementById('input').value;
+            var win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
 </script>
 
-        <a onclick='create(0)' style="color: white; margin 0; padding: 0; font-size"> 1v1. </a>
-        <a onclick='create(1)' style="color: white; margin 0; padding: 0; font-size"> slope. </a>
-        <a onclick='create(1)' style="color: white; margin 0; padding: 0; font-size"> serious sam. </a>
+        <a onclick='create(0)' style="color: rgba(0, 0, 0, 0); margin 0; padding: 0; font-size"> 1v1. </a>
+        <a onclick='create(1)' style="color: rgba(0, 0, 0, 0); margin 0; padding: 0; font-size"> slope. </a>
+        <a onclick='create(2)' style="color: rgba(0, 0, 0, 0); margin 0; padding: 0; font-size"> serious sam. </a>
+        <a onclick='create(3)' style="color: rgba(0, 0, 0, 0); margin 0; padding: 0; font-size"> old emulator. </a>
+        <a onclick='create(4)' style="color: rgba(0, 0, 0, 0); margin 0; padding: 0; font-size"> minecraft 18.</a>
+<hr>
+
+
+        <input type="text" value="https://www.google.com/" placeholder="https://google.com" id='input' autofocus>
+        <button onclick='create_broken()'>Test button</button>
+      </center>
 
 </body>
+
+<style>
+    * {
+     font-family: "Times New Roman", Times, serif;
+style="background-color:FFFFFFFF;"
+    }
+</style>
+
 </html>
+
+
+
