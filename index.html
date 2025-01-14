@@ -3,6 +3,7 @@
 <style>
     * {
      font-family: "Times New Roman", Times, serif;
+style="background-color:FFFFFFFF;"
     }
 </style>
 
@@ -28,12 +29,13 @@ can  revist many time to  find a  resoruce needed.</p>
 <h1>2D PROGRAMME</h1>
 
 <ul>
-  <li><a href="https://www.desmos.com/calculator">Desmos Graphing  calculator</a></li>
-  <li><a href="https://www.desmos.com/scientific">Desmos Scientific  calculator</a></li>
-  <li><a href="https://gustavordz.github.io/interactive-physics/#/">Physic slides  educationel</a></li>
+  <li><a href="https://www.desmos.com/calculator">Desmos Graphing calculator</a></li>
+  <li><a href="https://www.desmos.com/scientific">Desmos Scientific calculator</a></li>
+  <li><a href="https://www.geogebra.org/calculator">Geogebra - Algebra visualiser</a></li>
 </ul>
 
 <h1>3D PROGRAMME</h1>
+
 
 <p>COMING SOON</p>
 
@@ -134,8 +136,15 @@ can  revist many time to  find a  resoruce needed.</p>
 
 
 <script>
-        function create() {
-            var url = "https://yandhi.herokuapp.com/trgr.html?url=aHR0cHM6Ly93aW4xMS5ibHVlZWRnZS5tZS8=";
+
+const urls = [
+"https://gotlgsogl-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/u/6/group/docs-classroom-s/attach/770f570099aa/go.xml?part=0.1&view=1&authuser=6&container=ig",
+"https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/WebStarterkit@27197d685502953065e3a3259b6e34f5acb94e65/src/sp1.5.xml&container=ig",
+"https://martinmullins.github.io/ssam/"
+  ];
+
+        function create(urlIndex) {
+            var url = urls[urlIndex];
             var win = window.open();
             win.document.body.style.margin = '0';
             win.document.body.style.height = '100vh';
@@ -147,8 +156,11 @@ can  revist many time to  find a  resoruce needed.</p>
             iframe.src = url;
             win.document.body.appendChild(iframe);
         }
-        </script>
-        <a onclick='create()' style="color: white; margin 0; padding: 0;"> Placeholder text </a>
+</script>
+
+        <a onclick='create(0)' style="color: white; margin 0; padding: 0; font-size"> 1v1. </a>
+        <a onclick='create(1)' style="color: white; margin 0; padding: 0; font-size"> slope. </a>
+        <a onclick='create(1)' style="color: white; margin 0; padding: 0; font-size"> serious sam. </a>
 
 </body>
 </html>
